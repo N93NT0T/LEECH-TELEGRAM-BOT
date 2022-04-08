@@ -1,13 +1,13 @@
 {
-  "name": "apie",
-  "description": "A Telegram ",
-  "logo": "https://telegra.ph/file/e7689586d3f3477706660.jpg",
+  "name": "Telegram Torrent Leecher",
+  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @MaxxBots",
+  "logo": "https://telegra.ph/file/101a7d52e02772152c6e3.jpg",
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/prateek-090/LEECH-TELEGRAM-BOT",
-  "success_url": "https://t.me/TEAMMOVIEZCINEMASADMINBOT",
-  "website": "https://github.com/WarisBotz/LEECH-TELEGRAM-BOT",
+  "repository": "https://github.com/MaxxRider/Leech-Pro",
+  "success_url": "https://t.me/MaxxBotChat",
+  "website": "https://github.com/MaxxRider/Leech-Pro",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -35,7 +35,6 @@
     },
     "UPLOAD_AS_DOC": {
       "description": "True/False. If true all files will be uploaded as documents. Default is False.",
-      "value": "False",
       "required": false
     },
     "CHUNK_SIZE": {
@@ -55,14 +54,17 @@
     },
     "MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START": {
       "description": "should be an integer. Number of seconds to wait before cancelling a torrent.",
+      "value": "300",
       "required": false
     },
     "FINISHED_PROGRESS_STR": {
       "description": "should be a single character.",
+      "value": "■",
       "required": false
     },
     "UN_FINISHED_PROGRESS_STR": {
       "description": "should be a single character.",
+      "value": "□",
       "required": false
     },
     "TG_OFFENSIVE_API": {
@@ -95,6 +97,7 @@
     },
     "YTDL_COMMAND": {
       "description": "Enter your custom ytdl command like ytdl1@urgroupname and so on. Default is /ytdl.",
+      "value": "ytdl@koncholllll",
       "required": false
     },
     "PYTDL_COMMAND_G": {
@@ -119,6 +122,21 @@
     },
     "CUSTOM_FILE_NAME": {
       "description": "fill with name u want to prefix the file name like ur channel username🙊, keep empty for do nothing, but add to ur config vars even without input.",
+      "required": false
+    },
+    "TELEGRAM_LEECH_COMMAND": {
+      "description": "should be an integer. Number of seconds to wait before editing a message.",
+      "value": "tgleech",
+      "required": false
+    },
+    "TELEGRAM_LEECH_UNZIP_COMMAND": {
+      "description": "should be an integer. Number of seconds to wait before cancelling a torrent.",
+      "value": "tgextract",
+      "required": false
+    },
+    "STATUS_COMMAND": {
+      "description": "should be a single character.",
+      "value": "status",
       "required": false
     }
   },
